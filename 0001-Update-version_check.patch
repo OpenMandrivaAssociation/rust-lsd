@@ -1,0 +1,22 @@
+From e4d7b7de964f7a12e7f1f5f88f14d06763fc359f Mon Sep 17 00:00:00 2001
+From: Pierre Peltier <pierre.peltier@adevinta.com>
+Date: Thu, 24 Oct 2019 18:10:03 +0200
+Subject: [PATCH] Update the dependencies
+
+---
+ build.rs   |  2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/build.rs b/build.rs
+index 316ca7f..3676639 100644
+--- a/build.rs
++++ b/build.rs
+@@ -19,7 +19,7 @@ include!("src/app.rs");
+ 
+ fn main() {
+     match version_check::is_min_version("1.31.0") {
+-        Some((true, _)) => {}
++        Some(true) => {}
+         // rustc version too small or can't figure it out
+         _ => {
+             writeln!(&mut io::stderr(), "'lsd' requires rustc >= 1.31.0").unwrap();
