@@ -6,7 +6,7 @@
 
 Name:           rust-%{crate}
 Version:        0.16.0
-Release:        1
+Release:        2
 Summary:        Ls command with a lot of pretty colors and some other stuff
 
 # Upstream license specification: Apache-2.0
